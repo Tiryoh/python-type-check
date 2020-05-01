@@ -1,0 +1,4 @@
+FROM python:3.6-buster
+COPY ./test1.py /pyre/test1.py
+RUN pip install pyre-check
+CMD ["pyre", "--source-directory", "/pyre", "check"]

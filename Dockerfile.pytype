@@ -1,0 +1,4 @@
+FROM python:3.6-buster
+COPY ./test1.py /
+RUN pip install pytype
+CMD ["pytype", "/test1.py"]

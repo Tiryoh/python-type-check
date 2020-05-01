@@ -1,0 +1,4 @@
+FROM node:12-buster
+COPY ./test1.py /
+RUN npm install -g pyright
+CMD ["pyright", "/test1.py"]
